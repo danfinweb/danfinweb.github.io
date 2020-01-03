@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.start-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.start-screen-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 80%;
+    margin: 1em auto 0 auto;
+}
+
+.start-screen-navbar-item {
+    display: inline-block;
+    padding: 0;
+    margin: 0 1em 1em 1em;
+    text-align: center;
+    width: 120px;
+}
+
+.start-screen-logo {
+    width: 500px;
+    max-width: 80%;
+    margin: 15vh auto 0 auto;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+
+.content-logo {
+    margin: 0 auto 0 auto;
+    padding: 3em;
+    max-width: 228px;
+
+}
+
+.content-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-nav-dropdown {
+    display: none;
+    text-align: center;
+    width: 240px;
+    padding: 1em 0;
+}
+
+.content-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.content-nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 1em 0 0.5em 0;
+    text-align: center;
+    width: 120px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-page-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.main-page-column {
+    width: 46%;
+    padding: 2%;
+    margin: 1em 0;
+}
+
+.dan-portrait {
+    width: 100%;
+}
+
+.start-button-link {
+     margin: 14vh auto 0 auto;
+}
+
+.social-media-icon {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.footer-final-line{
+    text-align: center;
+    padding: 1em;
+    margin: auto ;
+    width: 80%;
+    min-width: 280px;
+    margin-top: 2em;
+}
+
+@media (max-width: 820px) { 
+
+    .start-screen-nav {
+        display: none;
+    }
+    
+    .content-nav-dropdown {
+        display: block;    
+    }
+    
+    .content-navbar {
+        display: none;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    
+    .main-page-row {
+        flex-direction: column;
+    }
+    
+    .main-page-column {
+        width: 100%;
+        padding: 0;
+        margin: 3em 0 1em 0;
+    }
+
+}

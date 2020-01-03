@@ -1,0 +1,29 @@
+.gallery-container {
+    display: flex;
+    width: 100%;
+
+}
+
+.gallery-column {
+    width: 48%;
+    padding: 1%;    
+}
+
+.gallery-column img {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 820px) { 
+
+    .gallery-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .gallery-column {
+        width: 100%;
+        padding: 0 0 1em 0;
+    }
+
+}

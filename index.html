@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    
+    <title>Dan Fink Visuals</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/imports/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    
+    <script type="text/javascript" src="imports/js/jquery/jquery-3.4.1.min.js"></script>
+    
+    <script language="javascript">
+        $(document).ready(function () {
+            
+            $('#gallery').load( 'gallery/gallery_photo.html' );
+            
+            $("#dropdown-toggle").click(function(){
+                $("#content-navbar").toggleClass("dropdown-active");
+            });
+            
+            $('#gallery-nav-photo').click(function(){
+                    $(".content-navbar-active").removeClass("content-navbar-active");
+                    $("#gallery").load( 'gallery/gallery_photo.html' );
+                    $('#gallery-nav-photo').addClass("content-navbar-active");
+                });
+            
+             $('#gallery-nav-video').click(function(){
+                    $(".content-navbar-active").removeClass("content-navbar-active");
+                    $("#gallery").load( 'gallery/gallery_video.html' );
+                    $('#gallery-nav-video').addClass("content-navbar-active");
+                });
+            
+            $('#gallery-nav-3d').click(function(){
+                $(".content-navbar-active").removeClass("content-navbar-active");
+                $('#gallery').load( 'gallery/gallery_3d.html' );
+                $('#gallery-nav-3d').addClass("content-navbar-active");
+                });
+            
+            $('#start-screen-nav-photo').click(function(){
+                    $(".content-navbar-active").removeClass("content-navbar-active");
+                    $("#gallery").load( 'gallery/gallery_photo.html' );
+                    $('#gallery-nav-photo').addClass("content-navbar-active");
+                });
+            
+             $('#start-screen-nav-video').click(function(){
+                    $(".content-navbar-active").removeClass("content-navbar-active");
+                    $ ("#gallery").load( 'gallery/gallery_video.html' );
+                    $('#gallery-nav-video').addClass("content-navbar-active");
+                });
+            
+            $('#start-screen-nav-3d').click(function(){
+                $(".content-navbar-active").removeClass("content-navbar-active");
+                $('#gallery').load( 'gallery/gallery_3d.html' );
+                $('#gallery-nav-3d').addClass("content-navbar-active");
+                });
+            
+            
+        });
+    </script>
+</head>
+
+<body>
+  
+    <div class="wrapper">
+    
+    <div class="start-screen">
+        <div class="start-screen-nav">
+            <li class="start-screen-navbar">
+                <a href="#logo-main"><ul id="start-screen-nav-photo" class="start-screen-navbar-item">Photography</ul></a>
+                <a href="#logo-main"><ul id="start-screen-nav-video" class="start-screen-navbar-item">Videography</ul></a>
+                <a href="#logo-main"><ul id="start-screen-nav-3d" class="start-screen-navbar-item">3D Graphics</ul></a>
+                <a href="#about"><ul class="start-screen-navbar-item">About</ul></a>
+                <a href="#contact"><ul class="start-screen-navbar-item">Contact</ul></a>
+            </li>
+        </div>
+        
+        <div class="start-screen-logo">
+            <img src="graphics/logo-white.svg">
+        </div>
+        
+        <a class ="start-button-link" href="#logo-main"><span class="start-button">Enter now!</span></a>
+        
+    </div>
+        
+    <div class=content>
+        
+        <div class="content-logo" id="logo-main">
+            <img src="graphics/logo-black.svg">
+        </div> 
+        
+        <div class="content-nav">
+            
+            <div id="dropdown-toggle" class="content-nav-dropdown">Navigation <i class="fas fa-chevron-down"></i></div>
+            
+            <li id="content-navbar" class="content-navbar">
+                <ul id="gallery-nav-photo" class="content-navbar-item">Photography</ul>
+                <ul id="gallery-nav-video" class="content-navbar-item">Videography</ul>
+                <ul id="gallery-nav-3d" class="content-navbar-item">3D Graphics</ul>
+                <a href="#about"><ul class="content-navbar-item">About</ul></a>
+                <a href="#footer"><ul class="content-navbar-item">Contact</ul></a>
+            </li>
+        </div>
+        
+        <div id="gallery">
+            
+        </div> 
+    </div>   
+        
+        <div id="about" class="about">
+            <div class="main-page-row">
+                <div class="main-page-column"><img class="dan-portrait" src="graphics/dan_portrait.jpg"></div>
+                <div class="main-page-column">
+                    <h1>Hi, I'm Dan!</h1>
+                    
+                    <p>After an adventurous escape from the depths of Siberia, I became passionate about photography during my adolescence. Having completed my degree in Communication and Multimedia Design in Germany, I turned my passion into a career with a focus on photography, videography and all things design.</p>
+                    
+                    <p>Besides an unhealthy obsession with neon lighting, I am inspired by obscure 80s anime, metalcore breakdowns and a nice cup of coffee.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer" class="footer">
+            <div class="main-page-row">
+            <div class="main-page-column">
+                <h2>Social Media</h2>
+                
+                <p>Do you like what you see? Then check me out on social media to stay up to date on my current projects! You can expect photos, videos, renders and all kinds of behind the scenes coverage!</p>
+                
+                <a class="social-media-link" href="https://www.facebook.com/danfinkvisuals"><i class="fab fa-facebook-square social-media-icon"></i></a>
+                <a class="social-media-link" href="https://www.instagram.com/lifeofkalashnikov/"><i class="fab fa-instagram social-media-icon"></i></a>
+                <a class="social-media-link" href="https://www.youtube.com/channel/UCZnHuXkMT9_kntJTnMbI3bA"><i class="fab fa-youtube social-media-icon"></i></a>
+            </div>
+    
+            <div class="main-page-column"><h2>Contact me!</h2>
+                <p>If you want to get in touch with me to collaborate on photo shootings, film something epic or just want to say 'hi' - drop me a message! Either use my social media channels or send me a mail at:</p>
+                <a class ="mail-adress" href="mailto:dan@danfinkvis.com"><i class="far fa-envelope social-media-icon"></i> dan@danfinkvis.com</a></div>
+            </div>
+            
+            <div class="footer-final-line">© Dan Fink - 2020 </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

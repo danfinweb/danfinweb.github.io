@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    color: #99002A;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 72px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #99002A;
+}
+
+p {
+    line-height: 2.5em;
+}
+
+.start-screen {
+    background-image: url(/graphics/hifi_city_bg.jpg);
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+.start-screen-nav {
+    color: white;
+}
+
+.start-screen-navbar {
+    font-weight: 500;
+}
+
+.start-screen-navbar a {
+    color: white;
+}
+
+.start-screen-navbar a:visited {
+    color: white;
+}
+
+.start-screen-navbar ul:hover {
+    color: #99002A;
+    cursor: pointer;
+}
+
+.start-button {
+    text-transform: uppercase;
+}
+
+.content-nav-dropdown {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.content-nav-dropdown:hover {
+    color: #99002A;
+    cursor: pointer;
+}
+
+.content-navbar a {
+    color: inherit;
+}
+
+.content-navbar ul:hover {
+    color: #99002A;
+    cursor: pointer;
+}
+
+.content-navbar-active {
+    border-bottom: 2px solid #99002A;;
+}
+
+.start-button {
+    display: inline-block;
+    color: #99002A;
+    font-weight: 600;
+    letter-spacing: 800;
+    border: 2px solid #99002A; 
+    border-radius: 1px;
+    padding: 15px;
+    width: 250px;
+    text-align: center
+}
+
+.start-button:hover {
+   color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.social-media-icon {
+    color: #99002A;
+}
+
+.footer {
+    color: white;
+    background-image: url(/graphics/hifi_city_bg.jpg);
+    background-position: top;
+    background: black;
+}
+
+.footer-final-line {
+    color: #262626;
+    border-top: 1px solid #262626;
+}
+
+.mail-adress {
+    display: flex;
+    align-items: center;
+    color: #99002A;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mail-adress:hover {
+    color: white;
+}
+
+.social-media-icon:hover {
+    color: white;
+}
+
+.dropdown-active {
+    display: flex;
+}
