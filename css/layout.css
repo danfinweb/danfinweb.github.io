@@ -59,8 +59,9 @@ body {
 .content-nav-dropdown {
     display: none;
     text-align: center;
-    width: 240px;
+    max-width: 240px;
     padding: 1em 0;
+    margin-bottom: 2em;
 }
 
 .content-navbar {

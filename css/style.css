@@ -60,11 +60,15 @@ p {
 .content-nav-dropdown {
     font-weight: 600;
     text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-bottom: 2em;
     
 }
 
 .content-nav-dropdown:hover {
     color: #99002A;
+    border-color: #99002A;
     cursor: pointer;
 }
 
