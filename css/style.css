@@ -59,6 +59,7 @@ p {
 
 .content-nav-dropdown {
     font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
     border: 2px solid black;
     border-radius: 2px;
